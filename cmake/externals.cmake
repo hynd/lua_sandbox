@@ -134,3 +134,12 @@ externalproject_add(
     INSTALL_DIR ${EP_BASE}
     INSTALL_ARGS "install/strip"
 )
+
+externalproject_add(
+    lua_tdigest
+    GIT_REPOSITORY https://github.com/vitillo/lua_tdigest.git
+    GIT_TAG 60c717714aa69930bbf78cce3120d30b6a5aef15
+    CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
+    INSTALL_DIR ${EP_BASE}
+    INSTALL_ARGS "install/strip"
+)
